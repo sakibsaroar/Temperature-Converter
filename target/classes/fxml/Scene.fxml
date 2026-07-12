@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="271.0" prefWidth="441.0" style="-fx-background-color: turquois;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tempcon.temperature_converter.FXMLController">
+    <children>
+      <ImageView fitHeight="404.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-133.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@blue-abstract-wallpaper-high-quality-resolution.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="39.0" layoutX="374.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1067-200.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="f1" layoutX="86.0" layoutY="56.0" prefHeight="23.0" prefWidth="276.0">
+         <effect>
+            <Reflection />
+         </effect></TextField>
+      <Label fx:id="label" layoutX="14.0" layoutY="186.0" mouseTransparent="true" prefHeight="77.0" prefWidth="404.0" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="60.0" prefHeight="17.0" prefWidth="52.0" text="Input" />
+      <Button fx:id="button" layoutX="318.0" layoutY="120.0" mnemonicParsing="false" onAction="#reset" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: black;" text="Reset" textFill="WHITE" />
+      <Button fx:id="b1" layoutX="47.0" layoutY="120.0" mnemonicParsing="false" onAction="#ferenheit" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: black;" text="Farenheit" textFill="#fffafa" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="299.0" AnchorPane.topAnchor="120.0">
+         <effect>
+            <Glow level="0.15" />
+         </effect></Button>
+      <Button fx:id="b2" layoutX="189.0" layoutY="120.0" mnemonicParsing="false" onAction="#celcius" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: black;" text="Celcius" textFill="#f5f4f4" />
+      <Label layoutX="63.0" layoutY="14.0" prefHeight="25.0" prefWidth="338.0" text=" Give input and select it's type to get the converted format" textAlignment="JUSTIFY" wrapText="true" />
+    </children>
+</AnchorPane>
